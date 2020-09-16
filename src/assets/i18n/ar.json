@@ -1,0 +1,9 @@
+{
+  "PageNotFound": {
+    "404": "General Error, please consult site administration",
+    "NotFoundNum": "404",
+    "OOPS_Looks_like_the_page_you_are_looking_for_no_longer_exists": "Error, Looks like the page you’re looking for no longer exists",
+    "Do_net_worry_Since_you_are_valuable_to_us_we_will_bring_you_back_to_safety": "We are experiencing a technical error, please return back later",
+    "Back_to_home": "Back to home"
+  }
+}

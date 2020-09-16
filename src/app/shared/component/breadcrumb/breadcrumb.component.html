@@ -1,3 +1,45 @@
-<p>
-  breadcrumb works!
-</p>
+<div id="breadCrumbwrapper" class="mt-3 mb-3">
+  <div class="container">
+    <div class="row  d-flex justify-content-between ">
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" *ngFor="let item of breadcrumbItems; let index = index"  [ngClass]="{'active' : index == breadcrumbItems?.length - 1}">
+            <a [routerLink] ="[item?.href]">{{item?.lable}}</a></li>
+        </ol>
+      </nav>
+
+      <ul class=" nav list-unstyled">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="16"
+              viewBox="0 0 23 16">
+              <image id="interface" width="23" height="16"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQCAYAAAD9L+QYAAAABHNCSVQICAgIfAhkiAAAAcRJREFUOE+1lD1IXEEUhb9FSCHYiJBKQUQLIVZCQgoVAhNUogxqY0zAIVqJKKmChW1EWxGEDIFoZ3b8Ac1OYUIISKoQAumiFoKFlSCiqBiu3CeLuyuu6DSveDPfuXPumZvqT2e+cT/rR6o/nTlXdgQ27kDHAZXAUgKfB7qAl96a9G0EXIglwDTQC6wLI4FXA53AFDDsrZkpRsCFWArMAU+BNqAJaLmEe2u2XYg9gNziPTDurUksK6jlQiwHloGHwHNvzaYLcSQHLgQXYov4BXwGBrw1Z4XILkTxNgMcAO3emj1l5IfrzwZgDfgNdHtrDq8KuBAf6Z4/0q/sPQUrTyAuxCqtah94kVSl4s1qhTRfbneaLX4TeJ3CK4Bd9XPLhditfTkBvmjCjm8MdyE+AVaAr8Ag8BF4rN+3wKgKi987QIe3Rm54sa5rqERpAZgViCRGMyzxfAX0eWuk2QKRhKwCD4BWb40I5Ye7EOV1CfSdt2YyTxNrvDX/rlhQpsXUq3V/cyoHXgNjwBtvzaciH5FU/kHiKBYBjdk5l1w/00jJjCl6uRBTwAQwBHwHjrIHl7yyX0VTcw/IbKlNBtfiHQDzIX7+B76O2S5YkNlQAAAAAElFTkSuQmCC" />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22"
+              viewBox="0 0 22 22">
+              <image id="printer" width="22" height="22"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABHNCSVQICAgIfAhkiAAAAaZJREFUOE+9lT0ohVEYx39XPkpKGZABk5KFwaCkDE4+FmeVwX0HmWRABgmTjZ1OTGLwmsTLYLhyGZDBajEYDJIoqatH59Zxc73nSp7tOff//Hre5+smMpkMrgVhdA60f3mMd46MVj2uLPEN+BFIA/vxvE+FBhqMVo0+4BWj1bwPOAijFWDw/8DJnYMzoMbJrh54AqQkPlYFlAN3jvg2kdw5kO4dAjc+FA9NG9CVBSeBbaDaBkq2L0Cd9Z+NVg+50CCM5OuKnPd7YAxYdsECC61oAdgFLq2/YbQa+QYsMZXOezfQ+hfgAaDEAaeA4VzwNTBuRZLtBbBo/ZTRas2jvgRhNPEFbLRal8AgjIqBCh+Io5EevNv4vGCZjuYCwWmjVUccWBpybJvnwx8CmrKb91MpBPzrlY4FA8ZpXr7MJ4FZ91bkgl+BNxstcylzvAlsxdSiH5i20yRnQKwMKJUFGXU2TH6YAZYKvG6yPHLlsnab7x6LSFZ8LybjTkDK4X82gVVgKgYsCzRXELjAUnhnfGVn2WeOe4Fan3+QE6DFh+hoTo1WfW7MB5wT8DWPFOc/AAAAAElFTkSuQmCC" />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="22"
+              viewBox="0 0 20 22">
+              <image id="symbol" width="20" height="22"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAABHNCSVQICAgIfAhkiAAAAkdJREFUOE+d1UGoF1UUx/HPk9RCTFCCsGihokGIRima1ULjktLmLgQJAh1JVxVUSCjlRltkUEaCiF0XihCII1aYk0QIKiq4ihIVXWURoSZIWcSL87hP/r6V44VhYIb53nPP7/c7MzQ8PKzvatruBWzFQvyFw9hYcvplqC+wabsVFXAVBzAFr+IPLOgFbNpuHK7gJpaUnOKuabtncBJf9AU+hR/xWslp32Crmrbbj8V9gdGz03il5PTNGOBO5L7AZTiGL0tOq0aBTds9jPM4dwfYtN0QZuIBXCw5/TfwwWP4qDY/VH0Ie1EwDZswFy+OAJu2W47PMaNCfsM7aPEu3sN4fIIPsaFesXms37G+5HRoaM3Bo8/jB1zAp/gX67AIAX4UX+HtktOlgaqnItSNis+WnG7HuwAexxOYV3L6s9pgQrXB01hecuru1fwBjIq2lZw2jlFtPUK5xyMBfYBR6vaSU/Tlzmra7g18huklp1/7AI/GcTG/5BQ9C5Em4QyexGrsKzndU+jjyNGnE7iOXfg7mJhVhQpomPmtklPcR1bTdrPxLP7B9yWnayOiVNtEArZXZeN5xCvs8h3W1snySPXeB9hcKx/l38KbJadyV1KatpuMcaNqD1QTE+X9+KgaP0LwMfbUabMFS5H6Rm9B7e3uktPrAxs+iJ9wuS8wzH4KK0pOR8a4YgdW9gXOqUNgbfRrDPBg5LkXsKr7MybiuQGbvYRvI7r3A1xS1Q+7xLFDsJdr5f0G7IAIMbnDOqM/qa/DWiWnG/8DqYT+HU2npu8AAAAASUVORK5CYII=" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr class="style1">
+</div>
+<router-outlet></router-outlet>
