@@ -1,0 +1,26 @@
+@import "../../../../assets/styles/helpers/variables";
+@import "../../../../assets/styles/helpers/mixins";
+
+
+
+#breadCrumbwrapper {
+
+  .breadcrumb {
+         background-color: white;
+          border-radius: 0;
+  }
+  a {
+    color: #A9AAAE;
+    font-family: $font-family-Calibri;
+  }
+
+  .breadcrumb-item {
+   &.active {
+    color: $main-color;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content:url('../../../../assets/styles/images/bread-crumb/arrows-1.svg');
+}
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './shared/component';
 import { HomeComponent, NewsListingReleasesComponent } from './views';
 
 const routes: Routes = [
@@ -8,6 +9,7 @@ const routes: Routes = [
   {path: 'Home' ,  children: [
     {path: 'Media-Center', component: NewsListingReleasesComponent}
   ]},
+  { path: '**', component: PageNotFoundComponent }
 
 ];
 
