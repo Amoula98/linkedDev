@@ -1,0 +1,10 @@
+
+@import "../../../assets/styles/helpers/variables";
+@import "../../../assets/styles/helpers/mixins";
+
+#releases-section {
+  & .font-color-main{
+    color: $main-color;
+  }
+
+}

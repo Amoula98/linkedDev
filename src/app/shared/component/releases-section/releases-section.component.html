@@ -1,0 +1,18 @@
+
+    <div class="card-group">
+    <ng-container *ngFor="let article of this._articles" >
+      <div class=" col-3 mb-3 mt-3">
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="{{article.urlToImage}}" alt="Card image">
+        <div class="card-img-overlay">
+          <h2 class="card-title font-size-60">{{article.publishedAt | date : 'dd'}} </h2>
+          <h4 class="card-subtitle font-size-30">{{article.publishedAt | date : 'MMMM'}}</h4>
+          <h6 class="card-subtitle font-size-16 mt-1">{{article.publishedAt | date: 'EEEE  yyyy'}}</h6>
+          <p class="card-text mt-3 mb-5">{{article.title}}</p>
+          <a href="#" class="btn btn-primary mt-5">{{'Read More' | translate}}</a>
+        </div>
+      </div>
+      </div>
+    </ng-container>
+    </div>
+

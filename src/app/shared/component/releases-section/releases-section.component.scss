@@ -1,0 +1,46 @@
+@import "../../../../assets/styles/helpers/variables";
+@import "../../../../assets/styles/helpers/mixins";
+
+.card {
+  font-family: $font-family-Optima;
+
+  & .card-title {
+    margin-bottom: 0;
+  }
+  & .card-subtitle {
+    margin-top: -.9rem;
+  }
+   & .font-size-60 {
+     font-size: 60px;
+    }
+   & .font-size-30 {
+     font-size: 30px;
+    }
+    & .font-size-16 {
+      font-size: 16px;
+    }
+   & .card-text, a {
+     font-family: $font-family-Calibri;
+    }
+    a {
+      background-color: #A7A9AC;
+      padding: 13.7px 25px;
+      border-radius: 0;
+     border: none;
+    }
+   & .card-img {
+     height: 400px;
+     opacity: 0.5;
+   }
+  & :hover {
+    background-image: none;
+    cursor: url('../../../../assets/styles/images/releases-seaction/Layer62.png'), auto;
+    background-color: $secondary-color;
+    & a {
+      background-color: $secondary-color;
+      border: 1px solid white;
+    }
+
+  }
+
+}

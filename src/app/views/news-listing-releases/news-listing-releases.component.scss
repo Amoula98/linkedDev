@@ -1,0 +1,17 @@
+
+@import "../../../assets/styles/helpers/variables";
+@import "../../../assets/styles/helpers/mixins";
+
+#releases-section {
+  .dropdown, .form-control {
+    border: 1px solid #ced4da;
+    background-color: #FBFBFB;
+  }
+  .btn-subscribe{
+        background-color: $main-color-light;
+      }
+  .font-color-main {
+    color: $main-color;
+  }
+
+}

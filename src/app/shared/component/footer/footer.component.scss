@@ -1,0 +1,39 @@
+
+@import "../../../../assets/styles/helpers/variables";
+@import "../../../../assets/styles/helpers/mixins";
+
+
+footer {
+  & #navbar {
+    & .btn-subscribe{
+      background-color: $main-color-light;
+    }
+    & .form-control {
+      padding: 25px;
+    }
+    & h5 {
+    font-family: $font-family-Calibri;
+    }
+    & a {
+    color: #4A4A4A ;
+    font-family: $font-family-Optima;
+    }
+
+    color: #4A4A4A ;
+    background-color: $light-gray;
+  }
+
+
+
+  & #copyRight {
+    background-color: $main-color-deep;
+    padding: 10px;
+    padding: 25px;
+    font-family: $font-family-Calibri;
+  }
+
+}
+
+
+
+

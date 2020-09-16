@@ -1,0 +1,25 @@
+
+@import "../../../../assets/styles/helpers/variables";
+@import "../../../../assets/styles/helpers/mixins";
+
+.header {
+ color:$main-color;
+ font-family: $font-family-Semilight;
+ font-size: smaller;
+ & .text-color-brown-deep {
+   color: #464646;
+ }
+ & .rectangle-lang {
+  background-color: $main-color;
+  padding: 5px;
+}
+}
+.menu {
+  font-family: $font-family-Optima;
+  font-size: larger;
+  & a {
+    color: $main-color;
+  }
+  color: $main-color;
+  background-color:  #F2F0F0;
+}
