@@ -1,0 +1,26 @@
+<div class="card-group row">
+  <ng-container *ngFor="let item of _interestedItems">
+    <div class=" col-3 mb-3 mt-3">
+      <div class="card text-white">
+        <img class="card-img" src="{{item.urlToImage}}" alt="Card image">
+        <!-- <div class="card-body"> -->
+        <div class="card-img-overlay">
+          <h2 class="card-title font-size-30">{{item.title.split(" ").slice(0,3).join(' ')}} </h2>
+          <h6 class="card-subtitle font-size-16 mt-1">{{item.content.split(" ").slice(0,10).join(' ')}}</h6>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="card-button "> -->
+          <a class="btn  mb-2 cutom-button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="9"
+              viewBox="0 0 5 9">
+              <image id="Layer_77" data-name="Layer 77" width="5" height="9"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAYAAAD6reaeAAAABHNCSVQICAgIfAhkiAAAAC5JREFUCFtj/P///38GBgZGBiTACBFjQJGACaJIIAvCJdAFwRIEVcItw2k7hjsBI+4j7rR995YAAAAASUVORK5CYII=" />
+            </svg>
+
+          </a>
+
+        <!-- </div> -->
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,14 @@
+
+@import "../../../assets/styles/helpers/variables";
+@import "../../../assets/styles/helpers/mixins";
+
+#newsDetails {
+  font-family: $font-family-Optima;
+
+  .font-color-main {
+    color: $main-color;
+  }
+  .text-lg {
+    font-size: x-large;;
+  }
+}

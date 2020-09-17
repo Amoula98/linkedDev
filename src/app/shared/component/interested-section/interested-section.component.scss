@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/helpers/variables";
+@import "../../../../assets/styles/helpers/mixins";
+
+
+
+.card {
+  font-family: $font-family-Optima;
+  .cutom-button {
+    position: absolute;
+    background-color: $secondary-color;
+    padding: 7px 20px;
+    border-radius: 0;
+    border: none;
+    text-align: end;
+    bottom: 13px;
+    right: 19px;
+    }
+    .font-size-30 {
+      font-size: 30px;
+     }
+
+    .card-img-overlay {
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      opacity: 0.7;
+      background-color: #008795;
+    }
+
+
+    .card-img {
+      max-width: 400px;
+     min-height: 224px;
+    }
+
+
+
+}

@@ -1,3 +1,33 @@
-<p>
-  news-details works!
-</p>
+<div id="newsDetails">
+  <div class="container">
+    <div class="row font-color-main mb-3 text-lg">
+      PRESS RELEASE
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <img src="{{article.urlToImage}}" alt="articleurlToImage" class="img-thumbnail">
+      </div>
+      <div class="col-8">
+        <span class="font-color-main pb-2 d-flex">{{article.title}} </span>
+        <span class="pb-2 d-flex">{{article.publishedAt | date: 'dd MMMM yyyy'}} </span>
+        <span class="pb-2 d-flex">{{article.description}} </span>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      {{article.content}}
+    </div>
+
+    <div class="row mb-2 font-color-main  text-lg">
+    ATTACHMENTS
+    </div>
+      <app-attachment [_attachments]="attachments"></app-attachment>
+
+  <div class="row mb-2 mt-4">
+    <span class="font-color-main text-lg"> YOU MAY ALSO BE INTERESTED IN </span>
+  </div>
+  <div class="row mb-2 ">
+  <app-interested-section [_interestedItems]="interestedItems"></app-interested-section>
+  </div>
+  </div>
+</div>

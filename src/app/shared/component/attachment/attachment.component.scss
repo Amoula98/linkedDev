@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/helpers/variables";
+@import "../../../../assets/styles/helpers/mixins";
+
+.card-custom {
+  background-color: #EEEEEE;
+}
+.btn-secondary-color{
+background-color: $secondary-color;
+}

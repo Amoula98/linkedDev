@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/helpers/variables";
 @import "../../../../assets/styles/helpers/mixins";
 
-.card {
+#card-release {
   font-family: $font-family-Optima;
 
   & .card-title {
@@ -24,21 +24,25 @@
     }
     a {
       background-color: #A7A9AC;
+      position: absolute;
       padding: 13.7px 25px;
       border-radius: 0;
-     border: none;
+      bottom: 50px;
+      left: 25px;
+      border: none;
     }
    & .card-img {
-     height: 400px;
      opacity: 0.5;
+     max-width: 400px;
+    min-height: 400px;
    }
   & :hover {
     background-image: none;
     cursor: url('../../../../assets/styles/images/releases-seaction/Layer62.png'), auto;
     background-color: $secondary-color;
-    & a {
-      background-color: $secondary-color;
+    a {
       border: 1px solid white;
+      background-color: $secondary-color;
     }
 
   }

@@ -8,7 +8,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { BreadcrumbComponent, FooterComponent, HeaderComponent, PageNotFoundComponent, ReleasesSectionComponent } from './shared/component';
+import { AttachmentComponent, BreadcrumbComponent, FooterComponent, HeaderComponent,
+  InterestedSectionComponent,
+   PageNotFoundComponent, ReleasesSectionComponent } from './shared/component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
@@ -35,7 +37,9 @@ export function httpLoaderFactory(httpClient: HttpClient): TranslateHttpLoader {
     BreadcrumbComponent,
     NewsListingReleasesComponent,
     PageNotFoundComponent,
-    NewsDetailsComponent
+    NewsDetailsComponent,
+    AttachmentComponent,
+    InterestedSectionComponent
     ],
   imports: [
     CommonModule,
