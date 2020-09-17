@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-releases-section',
@@ -8,11 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ReleasesSectionComponent implements OnInit {
  @Input() _articles;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log('newaapi', this._articles);
-
   }
-
+  itemDetails(article) {
+    sessionStorage.setItem('article', JSON.stringify(article));
+    this.router.navigate(['/Home/Media-Center/News-Details']);
+  }
 }

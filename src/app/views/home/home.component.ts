@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationExtras, Router } from '@angular/router';
+import {  Router } from '@angular/router';
 import { SharingDataService } from '../../_services';
 import * as newaapi from './../../_files/newsapi.json';
 
@@ -17,10 +17,9 @@ export class HomeComponent implements OnInit {
 
   articles: Article[];
   lastestArticles: Article[];
-  constructor(private router: Router, private sharingDataService: SharingDataService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.articles = newaapi.articles;
     this.lastestArticles = newaapi.articles.filter((item) => item.showOnHomepage == true).
     sort((item: any, item2: any) =>  {
       const c: any = new Date(item.publishedAt);
@@ -31,8 +30,6 @@ export class HomeComponent implements OnInit {
 }
 
 routeToPressReleases() {
-  this.sharingDataService.articles = this.articles;
-  sessionStorage.setItem('articles', JSON.stringify(this.articles));
-  this.router.navigate(['/Home/Media-Center']);
+  this.router.navigate(['/Home/Media-Center/Press-Release']);
 }
 }
