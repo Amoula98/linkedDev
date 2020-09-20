@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AttachmentComponent, BreadcrumbComponent, FooterComponent, HeaderComponent,
   InterestedSectionComponent,
-   PageNotFoundComponent, ReleasesSectionComponent } from './shared/component';
+   PageNotFoundComponent, ReleasesSectionComponent, SucessStoryComponent } from './shared/component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
@@ -20,7 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import { HomeComponent } from './views/home/home.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NewsDetailsComponent, NewsListingReleasesComponent } from './views';
+import { CarouselBannerComponent, NewsDetailsComponent, NewsListingReleasesComponent } from './views';
 
 
 export function httpLoaderFactory(httpClient: HttpClient): TranslateHttpLoader {
@@ -39,7 +39,9 @@ export function httpLoaderFactory(httpClient: HttpClient): TranslateHttpLoader {
     PageNotFoundComponent,
     NewsDetailsComponent,
     AttachmentComponent,
-    InterestedSectionComponent
+    InterestedSectionComponent,
+    CarouselBannerComponent,
+    SucessStoryComponent
     ],
   imports: [
     CommonModule,

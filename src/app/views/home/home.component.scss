@@ -2,9 +2,23 @@
 @import "../../../assets/styles/helpers/variables";
 @import "../../../assets/styles/helpers/mixins";
 
-#releases-section {
-  & .font-color-main{
+
+.carousel-control-prev-icon {
+  height: 54px;
+  width: 54px;
+  background-image: url('../../../assets/styles/images/sucess-story/prev.svg');
+}
+
+.carousel-control-next-icon {
+  height: 54px;
+  width: 54px;
+  background-image: url('../../../assets/styles/images/sucess-story/next.svg');
+}
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  position: relative;
+}
+   .font-color-main{
     color: $main-color;
   }
 
-}

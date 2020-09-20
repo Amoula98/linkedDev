@@ -1,0 +1,17 @@
+.card-img {
+   opacity: .5;
+}
+
+.card-group>.card {
+    margin-top: 50px;
+}
+.ellipse-svg {
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.ellipse, .ellipse-svg {
+  position: absolute;
+  top: 0%;
+  left: 38%;
+  z-index: 1;
+}
