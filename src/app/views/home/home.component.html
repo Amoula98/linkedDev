@@ -54,33 +54,52 @@
 
 <!-- our program -->
 
-<div class="our-program">
-  <img class="w-100" src="../../../assets/styles/images/our-program/Clip.png" alt="">
-  <div class="container-wrapper ">
-    <div class="container">
-
-      <!-- <div class="row"> -->
+<div class="our-program ">
+  <img class="w-100 img-height" src="../../../assets/styles/images/our-program/Clip.png" alt="">
+  <div class="container-wrapper mt-4 ">
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
         <h4 class="text-center">Today’s Investments, Tomorrow’s Cures</h4>
-        <h6 class="text-center">Support the different programs we have below</h6>
-      <!-- </div> -->
-      <div class="row">
-        <div class="col-md-3" *ngFor="let item of programs">
-          <app-block-of-program></app-block-of-program>
       </div>
+      <div class="row d-flex justify-content-center">
+        <h6 class="text-center">Support the different programs we have below</h6>
       </div>
 
+        <div class="wrapper  ml-auto mr-auto">
+          <div class="row-wrapper">
+            <div *ngFor="let program of programsUp" class="border-white">
+              <div class="desc-porgram">
+                <img src="{{program.icon}}" class="transform-subtitle ">
+                <h6 class="transform-subtitle text-center "> {{program.name}} </h6>
+                <h6 class="transform-subtitle text-center ">+</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-wrapper">
+            <div *ngFor="let program of programsDown" class="border-white">
+              <div class="desc-porgram">
+                <img src="{{program.icon}}" class="transform-subtitle ">
+                <h6 class="transform-subtitle text-center  "> {{program.name}} </h6>
+                <h6 class="transform-subtitle text-center">+</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
     </div>
   </div>
+
 </div>
 
 
 <!-- releases-section -->
-<div id="releases-section">
+<div id="releases-section" class="mt-5">
   <div class="container">
     <div class="row d-flex justify-content-center pt-2 pb-2">
-      <span class="font-color-main">
-        <h4 class="font-weight-light d-flex justify-content-center">Our latest</h4>
-        <a (click)="routeToPressReleases()"><h2 class="font-weight-normal" >Press Releases</h2> </a></span>
+      <span >
+        <h4 class="font-weight-light d-flex justify-content-center font-color-main ">Our latest</h4>
+        <a (click)="routeToPressReleases()" ><h2 class="font-weight-normal font-color-main" >Press Releases</h2> </a></span>
     </div>
     <div class="row  pb-5">
       <app-releases-section [_articles]="lastestArticles"></app-releases-section>

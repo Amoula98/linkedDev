@@ -17,7 +17,11 @@ export class HomeComponent implements OnInit {
 
   articles: Article[];
   lastestArticles: Article[];
-  programs = []
+  url = '../../../assets/styles/images/our-program';
+  programsUp = [{icon: `${this.url}/Layer56.svg` , name: 'Ta’alouf'}, {icon: `${this.url}/Layer23.svg` , name: 'A’awen'},
+  {icon: `${this.url}/Layer-57.svg` , name: 'Scholarships'}, {icon: `${this.url}/Layer58.svg` , name: 'Medical Research'}];
+  programsDown = [{icon: `${this.url}/Layer59.svg` , name: 'Zakat'}, {icon: `${this.url}/flower20.svg` , name: 'Fundraising'},
+  {icon: `${this.url}/flowers12.svg` , name: 'Omniyat Dania'}];
   constructor(private router: Router) { }
 
   ngOnInit() {
