@@ -8,7 +8,7 @@ import * as newaapi from './../../_files/newsapi.json';
 })
 export class NewsDetailsComponent implements OnInit {
   article: any;
-  attachments = ['ay 7ga', 'aaa', 'kk', 'sdddddddddd', 'sddds' , 'saad'];
+  attachments = ['AL Jalila Foundation.PDF', 'AL Jalila Foundation.PDF'];
   interestedItems: any[];
   constructor() { }
 

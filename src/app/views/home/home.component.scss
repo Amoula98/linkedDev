@@ -2,23 +2,49 @@
 @import "../../../assets/styles/helpers/variables";
 @import "../../../assets/styles/helpers/mixins";
 
-
-.carousel-control-prev-icon {
-  height: 54px;
-  width: 54px;
-  background-image: url('../../../assets/styles/images/sucess-story/prev.svg');
+* {
+  font-family: $font-family-Optima;
+  color: white;
+}
+#sucses-story {
+  %height-width {
+    height: 54px;
+    width: 54px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+    position: relative;
+  }
+  .carousel-control-prev-icon {
+     @extend %height-width;
+    background-image: url('../../../assets/styles/images/sucess-story/prev.svg');
+  }
+  .carousel-control-next-icon {
+    @extend %height-width;
+    background-image: url('../../../assets/styles/images/sucess-story/next.svg');
+  }
 }
 
-.carousel-control-next-icon {
-  height: 54px;
-  width: 54px;
-  background-image: url('../../../assets/styles/images/sucess-story/next.svg');
-}
-.carousel-control-next, .carousel-control-prev {
-  opacity: 1;
-  position: relative;
-}
    .font-color-main{
     color: $main-color;
   }
 
+a:hover {
+  cursor: pointer;
+}
+
+.our-program {
+  position: relative;
+
+  .container-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    z-index: 1;
+    margin-bottom: auto;
+  }
+
+}

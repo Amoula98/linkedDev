@@ -6,3 +6,4 @@ export * from './page-not-found/page-not-found.component';
 export * from './attachment/attachment.component';
 export * from './interested-section/interested-section.component';
 export * from './sucess-story/sucess-story.component';
+export * from './block-of-program/block-of-program.component';

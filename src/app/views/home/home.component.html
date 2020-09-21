@@ -30,10 +30,10 @@
           </div>
           <div class="carousel-item  text-center ">
             <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
             <app-sucess-story></app-sucess-story>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
             <app-sucess-story></app-sucess-story>
             </div>
             </div>
@@ -51,11 +51,36 @@
 
   </div>
 </div>
+
+<!-- our program -->
+
+<div class="our-program">
+  <img class="w-100" src="../../../assets/styles/images/our-program/Clip.png" alt="">
+  <div class="container-wrapper ">
+    <div class="container">
+
+      <!-- <div class="row"> -->
+        <h4 class="text-center">Today’s Investments, Tomorrow’s Cures</h4>
+        <h6 class="text-center">Support the different programs we have below</h6>
+      <!-- </div> -->
+      <div class="row">
+        <div class="col-md-3" *ngFor="let item of programs">
+          <app-block-of-program></app-block-of-program>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <!-- releases-section -->
 <div id="releases-section">
   <div class="container">
     <div class="row d-flex justify-content-center pt-2 pb-2">
-      <span class="font-color-main"><h4 class="font-weight-light d-flex justify-content-center">Our latest</h4><a (click)="routeToPressReleases()"><h2 class="font-weight-normal" >Press Releases</h2> </a></span>
+      <span class="font-color-main">
+        <h4 class="font-weight-light d-flex justify-content-center">Our latest</h4>
+        <a (click)="routeToPressReleases()"><h2 class="font-weight-normal" >Press Releases</h2> </a></span>
     </div>
     <div class="row  pb-5">
       <app-releases-section [_articles]="lastestArticles"></app-releases-section>

@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 
   articles: Article[];
   lastestArticles: Article[];
+  programs = []
   constructor(private router: Router) { }
 
   ngOnInit() {
