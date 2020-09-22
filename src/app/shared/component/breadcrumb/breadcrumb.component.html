@@ -1,10 +1,10 @@
 <div id="breadCrumbwrapper" class="mt-3 mb-3">
-  <div class="container">
+  <div class="container ">
     <div class="row  d-flex justify-content-between ">
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item" *ngFor="let item of breadcrumbItems; let index = index"  [ngClass]="{'active' : index == breadcrumbItems?.length - 1}">
+          <li class="breadcrumb-item" *ngFor="let item of breadcrumbItems; let i = index"  [ngClass]="{'active' : i == breadcrumbItems?.length - 1}">
             <a [routerLink] ="[item?.href]">{{item?.lable}}</a></li>
         </ol>
       </nav>

@@ -1,6 +1,6 @@
 
 @import "../../../assets/styles/helpers/variables";
-@import "../../../assets/styles/helpers/mixins";
+
 
 * {
   font-family: $font-family-Optima;
@@ -29,7 +29,7 @@
     color: $main-color;
  }
 
-a:hover {
+.cursor:hover {
   cursor: pointer;
 }
 .our-program {
@@ -41,13 +41,16 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
 }
   .transform-subtitle {
     transform: rotate(-90deg);
   }
-  img.transform-subtitle {
+  .img-icon-back {
     width: 64px;
     height: 64px;
+    transform: rotate(0);
+
   }
   .img-height {
    max-height: 658px;
@@ -59,33 +62,91 @@ a:hover {
 
 .wrapper {
   margin-top: 25px;
-}
-.row-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.row-wrapper div {
-  &.border-white{
-    border: 1px solid white;
+  .row-wrapper {
+    display: flex;
+    justify-content: center;
   }
-  height: 150px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
+  .row-wrapper div {
+    &.border-white{
+      border: 1px solid white;
+    }
+    &.border-white:hover {
+      background-color: $main-color;
+      border: none;
+    }
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+  }
+  .row-wrapper:last-child {
+    margin-top: -20px;
+  }
+
+  .row-wrapper > div:not(:last-child) {
+    margin-right: 45px
+  }
+
+  .row-wrapper > div:not(:first-child) {
+    margin-left: 30px
+  }
+
+}
+
+
+.our-program-wrapper{
+  flex-direction: column;
   align-items: center;
-  transform: rotate(45deg);
+  justify-content: space-around !important;
 }
 
+img.transform-subtitle.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 992px) {
+  .row-wrapper div {
+    height: 100px;
+    width: 100px;
+  }
+  img.transform-subtitle.img-responsive {
+    width: 30px;
+    height: 40px;
+}
+}
+@media (max-width: 768px) {
+  .row-wrapper div {
+    height: 75px;
+    width: 75px;
+  }
+  img.transform-subtitle.img-responsive {
+    width: 20px;
+    height: 30px;
 
-.wrapper .row-wrapper:last-child {
-  margin-top: -20px;
+}
 }
 
-.row-wrapper div:not(:last-child) {
-  margin-right: 45px
-}
+@media (max-width: 644px) {
+  .row-wrapper div {
+    height: 50px;
+    width: 50px;
+  }
+  img.transform-subtitle.img-responsive {
+    width: 20px;
+    height: 20px;
 
-.row-wrapper div:not(:first-child) {
-  margin-left: 30px
 }
+}
+// @media (max-width: 540px) {
+//   .row-wrapper div {
+//     height: 50px;
+//     width: 50px;
+//   }
+//   img.transform-subtitle.img-responsive {
+//     width: 20px;
+//     height: 20px;
+
+// }
+// }

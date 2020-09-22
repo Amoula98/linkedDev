@@ -1,14 +1,14 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
     <div class="carousel-inner">
-      <div class="carousel-item text-center active">
+      <div class="carousel-item text-center " *ngFor="let item of items; let i = index"  [ngClass]="{'active' : i == items?.length - 1}">
         <div class="item-overlay"> </div>
-        <img class="d-block w-100" src="../../../../assets/styles/images/banner/Clip.png" alt="First slide">
+        <img class="w-100 img-back" src="../../../../assets/styles/images/banner/Clip.png" alt="First slide">
         <div class="carousel-caption-desc ">
-          <h6 class="text-content"> <span class="font-second-color font-size-30"> Al Jalila Foundation </span> is
+          <h5 class="text-content"> <span class="font-second-color font-size-30"> Al Jalila Foundation </span> is
             focused on inspiring the next generation of Emirati
-            <span class="font-size-30">Healthcare</span> professionals in the UAE. </h6>
-          <div class="mt-5">
+            <span class="font-size-30">Healthcare</span> professionals in the UAE . </h5>
+          <div class="mt-4">
             <a class="btn btn-gray mr-3 pr-4 pl-4" href="#">{{'Read More' | translate}}</a>
             <a class="btn btn-second-color " href="#">{{'DONATE NOW' | translate}}</a>
           </div>

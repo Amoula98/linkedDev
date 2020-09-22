@@ -11,6 +11,8 @@ export class BreadcrumbComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+        this.madeBreadCrumbPath(this.router.url);
+
     this.detectChangeOfRoute();
   }
   detectChangeOfRoute() {

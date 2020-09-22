@@ -1,5 +1,5 @@
 @import "../../../../assets/styles/helpers/variables";
-@import "../../../../assets/styles/helpers/mixins";
+
 
 * {
   color: #F2F0F0;
@@ -8,17 +8,8 @@
   font-family: $font-family-Optima;
 }
 
-@media screen and (min-width: 320px) {
-    .font-size-30 {
-       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    }
-}
-@media screen and (min-width: 1000px) {
-  .font-size-30 {
-    font-size: 30px;
-  }
-}
 .carousel {
+
   .carousel-item {
     width: 100%;
     max-height: 500px;
@@ -27,7 +18,7 @@
       top: 40%;
       bottom: 0;
       align-items: center;
-      max-width: 422px;
+      max-width: 476px;
       @extend %margin-left-right-auto;
       @extend %margin-top-right-auto;
     }
@@ -124,3 +115,44 @@
 @mixin font-size-calc($fontSize) {
   font-size: calc($fontSize + 6 * ((100vw - 320px) / 680));
 }
+
+@media (max-width: 575.98px) {
+  .font-size-30 {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+ }
+   .img-back {
+    height: 345px;
+  }
+  .carousel-caption-desc{
+    top: 20%;
+  }
+}
+@media (max-width: 801px) {
+  .font-size-30 {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+ }
+ .img-back {
+  height: 300px;
+}
+  .carousel-caption-desc{
+    top: 20%;
+  }
+ }
+ @media (max-width: 991.98px)  {
+  .font-size-30 {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+ }
+ .img-back {
+  height: 300px;
+}
+  .carousel-caption-desc{
+    top: 20%;
+  }
+ }
+
+  // .img-back {
+  //   height: 300px;
+  // }
+  // .carousel-caption-desc{
+  //   top: 40%;
+  // }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel-banner.component.scss']
 })
 export class CarouselBannerComponent implements OnInit {
-
+  items = [{}, {}, {}];
   constructor() { }
 
   ngOnInit() {

@@ -18,3 +18,13 @@
   margin-right: auto;
 
 }
+
+
+@media (max-width: 510px)  {
+  .card-img {
+    height: 345px;
+  }
+  .card-title {
+    margin-bottom: .5rem !important;
+  }
+}

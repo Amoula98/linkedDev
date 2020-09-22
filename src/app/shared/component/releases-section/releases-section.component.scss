@@ -1,5 +1,5 @@
 @import "../../../../assets/styles/helpers/variables";
-@import "../../../../assets/styles/helpers/mixins";
+
 
 #card-release {
   font-family: $font-family-Optima;
@@ -47,4 +47,11 @@
 
   }
 
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+  div#card-release {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}
 }
