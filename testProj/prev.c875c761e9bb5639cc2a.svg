@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="14" height="26" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow" transform="translate(-231 -1079)">
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(231 1079)" fill="none" stroke="#c2c2c2" stroke-width="1.5">
+      <circle cx="27" cy="27" r="27" stroke="none"/>
+      <circle cx="27" cy="27" r="26.25" fill="none"/>
+    </g>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(251 1093)" clip-path="url(#clip-path)">
+      <g transform="translate(-251 -1093)">
+        <image id="_1455397555_left" data-name="1455397555_left" width="14" height="26" transform="translate(251 1093)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAABHNCSVQICAgIfAhkiAAAAWdJREFUOE+V1M0rRFEcxvGv8hdYsFGW/gBKTyRFslIsRLGiZkEomWJjLCgv5W3jbaWEhZCFDQvFPKX4AywVC2v70ZXRxczcM3d9P+d0nt9zTkUul6Ocz3YncFhRDrTdDlwDO8HQdjdwAWQkzQdB233ACZCWtBIdLRHaHgIOgAlJm/k8SkLbKWAbSEnajYdYFNpOA0vAoKTDv8kXhLangWVgQNJxoXH9g7bnouSAbkmXxWb8C9reAsaADkk3pYrxA22vAZNAi6T7pDZ9QdvrUdxAg6SnJPQ1x2w2ewV0AbWSXkNQHr4B1ZIqQ9FPc2xHxW0FqiR9hCwQD+cOaAZqJL0n4b/jiHaOrk4iLlSAU6AXqJP0ElSA/E+2j4B+oF7Sc1DlYngPGAEaJT0GlTyG94FhoEnSQ9C1iuENYBxok3QbdJFjeAGYjUKTdBb0dMTwIjAD9Eg6T3xz4ueyPQWsAqNlwWiRb5z5BPKgwwGuLmiBAAAAAElFTkSuQmCC"/>
+      </g>
+    </g>
+  </g>
+</svg>
