@@ -6,6 +6,11 @@
  color:$main-color;
  font-family: $font-family-Semilight;
  font-size: smaller;
+ top: 0;
+ position: -webkit-sticky;
+ position: sticky;
+ height: 153px;
+ background-color: white;
  & .text-color-brown-deep {
    color: #464646;
  }
@@ -17,9 +22,14 @@
 .menu {
   font-family: $font-family-Optima;
   font-size: larger;
+
   & a {
     color: $main-color;
   }
   color: $main-color;
   background-color:  #F2F0F0;
+  height: 56px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 153px;
 }
