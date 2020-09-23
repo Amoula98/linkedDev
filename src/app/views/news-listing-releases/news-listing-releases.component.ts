@@ -31,20 +31,21 @@ export class NewsListingReleasesComponent implements OnInit {
     this.articles = this.articles.slice(0, 8);
     this.isExistedMoreItems();
   }
-  getFilterData() {
+  search () {
+    this.articles = this.getFilterData(this.articlesClone);
+    this.isExistedMoreItems();
+  }
+  getFilterData(articlesClone) {
     console.log('getFilterData',  this.myGroup);
     if (this.myGroup.value.category != '' && this.myGroup.value.title != '') {
-    this.articles = this.articlesClone.filter((item) => item.sourceID == this.myGroup.value.category
+      return articlesClone.filter((item) => item.sourceID == this.myGroup.value.category
     && item.title.includes(this.myGroup.value.title));
-    return this.articles;
     } else if (this.myGroup.value.title != '') {
-      this.articles = this.articlesClone.filter((item) => item.title.includes(this.myGroup.value.title));
-    return this.articles;
+      return articlesClone.filter((item) => item.title.includes(this.myGroup.value.title));
     } else if (this.myGroup.value.category != '' ) {
-      this.articles = this.articlesClone.filter((item) => item.sourceID == this.myGroup.value.category);
-    return this.articles;
+      return articlesClone.filter((item) => item.sourceID == this.myGroup.value.category);
     } else {
-     return this.articles = this.articlesClone.slice(0, 8);
+      return articlesClone.slice(0, 8);
     }
   }
   getNextData() {
@@ -55,6 +56,8 @@ export class NewsListingReleasesComponent implements OnInit {
     this.isExistedMore = true;
      if (this.articlesClone.length == this.articles.length) {
        this.isExistedMore = false;
+     } else if (this.articles.length == 0) {
+      this.isExistedMore = false;
      }
   }
 }

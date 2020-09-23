@@ -6,7 +6,7 @@
   .custom-select, .form-control {
     border: 1px solid #ced4da;
     background-color: #FBFBFB;
-    background: url('../../../assets/styles/images/news-list-releases/ic_expand_more_24px.svg') no-repeat right .75rem center/15px 10px;
+    &.custom-select {    background: url('../../../assets/styles/images/news-list-releases/ic_expand_more_24px.svg') no-repeat right .75rem center/15px 10px; }
     height: calc(2.3em + 0.75rem + 2px);
 
   }

@@ -46,12 +46,7 @@
   .transform-subtitle {
     transform: rotate(-90deg);
   }
-  .img-icon-back {
-    width: 64px;
-    height: 64px;
-    transform: rotate(0);
 
-  }
   .img-height {
    max-height: 658px;
   }
@@ -65,6 +60,12 @@
   .row-wrapper {
     display: flex;
     justify-content: center;
+    .img-icon-back {
+      width: 64px;
+      height: 64px;
+      transform: rotate(0);
+
+    }
   }
   .row-wrapper div {
     &.border-white{
